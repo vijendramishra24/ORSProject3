@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 1, 2018 11:41:49 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="in.co.sunrays.proj3.dto.StudentDTO" table="STUDENTDTO">
+        <id name="id" type="long" access="field">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="dob" type="java.util.Date">
+            <column name="DOB" />
+        </property>
+        <property name="mobileNo" type="java.lang.String">
+            <column name="MOBILENO" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="collegeId" type="long">
+            <column name="COLLEGEID" />
+        </property>
+        <property name="collegeName" type="java.lang.String">
+            <column name="COLLEGENAME" />
+        </property>
+        <property name="createdBy" type="java.lang.String" access="field">
+            <column name="CREATEDBY" />
+        </property>
+        <property name="modifiedBy" type="java.lang.String" access="field">
+            <column name="MODIFIEDBY" />
+        </property>
+        <property name="createdDatetime" type="java.sql.Timestamp" access="field">
+            <column name="CREATEDDATETIME" />
+        </property>
+        <property name="modifiedDatetime" type="java.sql.Timestamp" access="field">
+            <column name="MODIFIEDDATETIME" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
